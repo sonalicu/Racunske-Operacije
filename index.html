@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head> 
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <title>Basic Arithmetic Operations</title>
+
+            <script type ="text/javascript">
+				
+				   function calc()
+            {
+                var b1 = parseFloat(document.getElementById('b1').value);
+                var b2 = parseFloat(document.getElementById('b2').value);
+                
+                var oper = document.getElementById('operacije').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('rezultat').value = b1+b2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('rezultat').value = b1-b2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('rezultat').value = b1/b2;
+                }
+                
+                if(oper === '*')
+                {
+                    document.getElementById('rezultat').value = b1*b2;
+                }
+            }
+            
+					
+					
+					
+					
+				
+            </script>
+            
+        </head>
+
+        <body>
+       
+            <h1>Osnovne računske operacije</h1>
+			
+            <form id="myform">
+
+            <strong>Upisite prvi broj</strong> <input type="text" id="b1" maxlength="7"> 
+            
+            <br><br>
+				
+			<strong>Upisite racunsku operaciju koju zelite +, -, * ili /</strong> <input type="text" id="operacije" maxlength="1">	
+			
+			<br> <br>
+				
+			<strong>Upisite drugi broj</strong> <input type="text" id="b2" maxlength="7">	
+			
+			<br> <br>
+			
+			<input type="button" value="Izračunaj" onclick="calc();">
+				
+			<br><br>
+				
+            <strong>Rezultat</strong> <input type="text" id="rezultat" maxlength="7">
+            
+           	
+			
+				
+
+            </form>
+           
+
+           
+           
+
+
+
+
+        </body>
+
+
+
+
+
+
+
+
+
+</html>
